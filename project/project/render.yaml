@@ -3,7 +3,7 @@ services:
     name: BookMyShow_Clone
     env: python
     buildCommand: pip install -r project/requirements.txt
-    startCommand: gunicorn project.wsgi:application
+    startCommand: gunicorn project/project.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: project.settings
